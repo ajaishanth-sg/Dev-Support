@@ -1,0 +1,30 @@
+{
+  "name": "Dev Supporter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "cd client && pnpm dev",
+    "dev": "concurrently \"node server/index.js\" \"cd client && pnpm dev\"",
+    "build:client": "cd client && pnpm install && pnpm run build",
+    "build": "pnpm install && cd client && pnpm install && pnpm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.0",
+  "dependencies": {
+    "concurrently": "^10.0.6",
+    "cors": "^2.8.6",
+    "docx": "^9.14.0",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "multer": "^2.5.0",
+    "pdf-parse": "^2.4.5",
+    "pdfkit": "^0.20.2",
+    "pptxgenjs": "^4.0.1",
+    "uuid": "^14.0.3"
+  }
+}
